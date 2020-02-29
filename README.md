@@ -1,5 +1,8 @@
 # ISTS2020-Botnet
 
+
+The botnet IP is at `http://172.16.0.56:80`
+
 The botnet spec for ISTS2020.
 
 Teams deploy their botnet across the infrastructure to capture hosts and gain points.
@@ -12,6 +15,8 @@ A sample python bot can be found in [bot.py](./bot.py).
 The botnet spec is rather simple, bots call back to the C2 every round using HTTP.
 
 The first step is the checkin for commands
+
+> Note: You can do this with either a GET or PUT request
 
 ```
 GET /callback HTTP/1.1
